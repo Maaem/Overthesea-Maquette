@@ -1,0 +1,142 @@
+body {
+    background-color: rgb(255, 245, 233);
+    height: 100vh;
+}
+
+.parent {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    height: 100%;
+    }
+    
+.div1_header { 
+    grid-area: 1 / 1 / 2 / 13; 
+    border: 2px solid black;
+    column-count: 2;
+    padding: 50px;
+    }
+
+.logo {
+    font-size: 28px;
+    text-align: center;
+    padding-left: 90%;
+    letter-spacing: 2px;
+}
+
+.menu_burger {
+    width: 40px;
+    height: 40px;
+    float: right;
+}
+
+/* left_sied  */
+.left_side { 
+    grid-area: 2 / 1 / 8 / 3; 
+    border: 2px solid black;
+    position: relative;
+    writing-mode: vertical-lr;
+    text-orientation: mixed;
+    text-align: center;
+    
+}
+
+.text {
+    font-size: 12vh;    
+    white-space: nowrap;
+    transform:rotate(180deg); /* tourne le texte*/
+    line-height: 1.6;
+
+}
+
+/* fin left_side */
+
+/* div 3 */
+.div3_footer { 
+    grid-area: 8 / 1 / 9 / 9; 
+    border: 2px solid black;
+    text-align: center;
+    justify-content: space-around;
+    font-size: 40px;
+}
+
+.div3_footer ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.div3_footer li {
+    list-style: none;
+    display: inline-block;
+    margin: 3px;
+    row-gap: 10px;
+}
+
+.div3_footer  a {
+    text-decoration: none;
+    color: black;
+
+
+}
+
+/* fin div 3 */
+    
+.div4_middle { 
+    grid-area: 2 / 3 / 8 / 9; 
+    border: 2px solid black;
+    background-image: url('img/love-dress-white-04.jpeg');
+    background-size: cover;
+    /* background-position: center; */
+    }
+    
+
+.div4_middle > img {
+    height: 55%;
+}
+    
+/* preorder */
+.right { 
+    grid-area: 2 / 9 / 8 / 13; 
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    position: relative;
+    font-size: 3vh;
+}
+
+.overlap {
+    background: url('img/love-dress-white-02.jpeg');
+    background-size: cover;
+    background-position: center;
+    height: 30%;
+    width: 120%;
+    position: absolute;
+    top: 20%;
+    right: 0;
+    border-right: 0;
+    border: 2px solid black;
+}
+
+.preorder {
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* fin preorder */
+    
+.div6_foot { 
+    grid-area: 8 / 9 / 9 / 13; 
+    border: 2px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 28px;
+}
+    
